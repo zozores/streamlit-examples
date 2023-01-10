@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "22e55c423b84e32ad86ff3bef49a958bd02229ed289a4eb380ee0570ae2f7f8d"
+            "sha256": "a88349f2a1fc6330804f297a8abbf5810e498f3f39fb1b2008f2622716e0dc38"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -868,6 +868,13 @@
             ],
             "markers": "platform_system != 'Darwin'",
             "version": "==2.2.1"
+        },
+        "wget": {
+            "hashes": [
+                "sha256:35e630eca2aa50ce998b9b1a127bb26b30dfee573702782aa982f875e3f16061"
+            ],
+            "index": "pypi",
+            "version": "==3.2"
         },
         "zipp": {
             "hashes": [

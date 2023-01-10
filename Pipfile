@@ -8,6 +8,7 @@ streamlit = "*"
 pandas = "*"
 matplotlib = "*"
 plotly = "*"
+wget = "*"
 
 [dev-packages]
 aidoc = "*"
