@@ -1,7 +1,5 @@
-from api import API
+from api import api_instance
 import datetime
-
-api_instance = API()
 
 
 def get_feed():

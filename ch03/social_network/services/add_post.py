@@ -1,7 +1,5 @@
-from api import API
+from api import api_instance
 from models import Post
-
-api_instance = API()
 
 
 def add_post(post: Post):
