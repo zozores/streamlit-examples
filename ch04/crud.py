@@ -1,4 +1,5 @@
 from tkinter.messagebox import NO
+from turtle import width
 import streamlit as st
 import pandas as pd
 from st_aggrid import AgGrid
@@ -15,7 +16,12 @@ def crud(path):
     gb = GridOptionsBuilder.from_dataframe(df)
     gb.configure_side_bar()
     gb.configure_default_column(
-        groupable=True, value=True, enableRowGroup=True, aggFunc="sum", editable=True
+        groupable=True,
+        value=True,
+        enableRowGroup=True,
+        aggFunc="sum",
+        editable=True,
+        min_column_width=50,
     )
     gb.configure_selection(selection_mode="multiple", use_checkbox=True)
     gridOptions = gb.build()
