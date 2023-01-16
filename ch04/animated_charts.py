@@ -7,6 +7,8 @@ import plotly.graph_objects as go
 df = pd.read_csv("datasets/gdp-per-capita-worldbank.csv").sort_values(
     by=["Year", "Entity"]
 )
+
+# Animated Bubble Map
 fig = px.scatter_geo(
     df,
     locations=df["Code"],
@@ -17,4 +19,15 @@ fig = px.scatter_geo(
     color_continuous_scale="Hot",
 )
 st.title("Animated Bubble Map")
+st.write(fig)
+
+# Animated Bar Chart
+df = df[df["GDP per capita, PPP (constant 2017 international $)"] > 50000]
+fig = px.bar(
+    df,
+    x=df["Entity"],
+    y=df["GDP per capita, PPP (constant 2017 international $)"],
+    animation_frame=df["Year"],
+)
+st.title("Animated Bar Chart")
 st.write(fig)
