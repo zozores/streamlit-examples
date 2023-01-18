@@ -10,6 +10,7 @@ matplotlib = "*"
 plotly = "*"
 wget = "*"
 streamlit-aggrid = "*"
+psycopg2 = "*"
 
 [dev-packages]
 aidoc = "*"
