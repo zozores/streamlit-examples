@@ -11,6 +11,7 @@ plotly = "*"
 wget = "*"
 streamlit-aggrid = "*"
 psycopg2 = "*"
+pymongo = "*"
 
 [dev-packages]
 aidoc = "*"
