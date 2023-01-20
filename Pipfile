@@ -12,6 +12,8 @@ wget = "*"
 streamlit-aggrid = "*"
 psycopg2 = "*"
 pymongo = "*"
+sqlalchemy = "*"
+flask = "*"
 
 [dev-packages]
 aidoc = "*"
